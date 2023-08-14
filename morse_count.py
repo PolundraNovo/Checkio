@@ -52,3 +52,9 @@ def count_morse_(message: str, letters: str, index, morse_string) -> int:
         return (index, morse_string)
     return (index, morse_string)
 
+def count_morse(message: str, letters: str) -> int:
+    x = count_morse_(message, letters, 0, '')
+    print('x=',x[0])
+    return x[0]
+
+
